@@ -1,14 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEye } from '@fortawesome/free-solid-svg-icons'
 import Option from '../Option/Option';
+import './Question.css'
 
 const Question = ({ singleQuestion }) => {
-    const { id, question, options } = singleQuestion
+    console.log(singleQuestion)
+    const { id, question, options, correctAnswer } = singleQuestion
+
+
     return (
-        <div>
-            <h2>{question}</h2>
-            {
-                options.map(option => <Option option={option}></Option>)
-            }
+        <div className='single-quiz'>
+            <h2>Q:{question}</h2>
+            <div>
+                {
+                    options.map(option => <Option option={option}></Option>)
+                }
+            </div>
+            <button className='font-eye' onClick={() => alert(`${correctAnswer}`)}><FontAwesomeIcon icon={faEye}></FontAwesomeIcon></button>
 
         </div>
     );

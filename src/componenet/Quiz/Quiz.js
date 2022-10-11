@@ -9,12 +9,14 @@ const Quiz = () => {
 
 
     return (
-        <div className='quiz-container'>
+        <div className='container'>
             <div>
-                <h2>{name}</h2>
-                <img src={logo} alt="" />
+                <div>
+                    <h2>{name}</h2>
+                    <img src={logo} alt="" />
+                </div>
             </div>
-            <div>
+            <div className='quiz-container'>
                 {
                     questions.map(singleQuestion => <Question
                         key={singleQuestion.id}
