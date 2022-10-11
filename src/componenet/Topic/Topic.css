@@ -1,0 +1,9 @@
+.single-topic {
+    background-color: darkgray;
+    padding: 20px 0;
+}
+
+.single-topic img {
+    width: 150px;
+    height: 200px;
+}
