@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Blog from './componenet/Blog/Blog';
 import Home from './componenet/Home/Home';
+import Topics from './componenet/Topics/Topics';
 import Main from './layout/Main';
 
 function App() {
@@ -14,6 +15,11 @@ function App() {
         {
           path: '/',
           element: <Home></Home>
+        },
+        {
+          path: '/topics',
+          loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
+          element: <Topics></Topics>
         },
         {
           path: '/blog',
