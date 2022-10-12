@@ -7,3 +7,19 @@
     width: 150px;
     height: 200px;
 }
+
+.topic-btn {
+    background-color: rgb(55, 55, 224);
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.topic-btn a {
+    color: white;
+    text-decoration: none;
+}
+
+.topic-btn:hover {
+    background-color: rgba(55, 55, 224, 0.749);
+}

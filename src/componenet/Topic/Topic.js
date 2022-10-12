@@ -9,7 +9,7 @@ const Topic = ({ topic }) => {
             <h1>{name}</h1>
             <img src={logo} alt="" />
             <div>
-                <button><Link to={`/quiz/${id}`}>Start Quiz</Link></button>
+                <button className='topic-btn'><Link to={`/quiz/${id}`}>Start Quiz</Link></button>
             </div>
         </div>
     );
