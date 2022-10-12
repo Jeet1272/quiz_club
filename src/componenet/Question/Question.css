@@ -5,7 +5,9 @@
 }
 
 .font-eye {
-    color: sandybrown;
-    background-color: brown;
+    color: red;
+    background-color: coral;
     margin-top: 10px;
+    padding: 5px;
+    border: none;
 }
