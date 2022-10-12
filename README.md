@@ -1,3 +1,15 @@
+# Project name
+
+Quiz Club
+
+# Live link 
+
+(https://effulgent-syrniki-53ec10.netlify.app/)
+
+# Project Summary
+
+It's a skill development base webpage by quiz of different programming language. Also have a blog route with 3 question with answer.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
