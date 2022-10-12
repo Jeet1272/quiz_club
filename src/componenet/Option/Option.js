@@ -7,7 +7,6 @@ const Option = ({ option }) => {
         <div>
             <div className='option-field'>
                 <input type="radio" value={option} name="option" />{option}
-
             </div>
         </div>
     );

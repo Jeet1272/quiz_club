@@ -1,13 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye } from '@fortawesome/free-solid-svg-icons'
 import Option from '../Option/Option';
 import './Question.css'
 
 const Question = ({ singleQuestion }) => {
-    console.log(singleQuestion)
     const { id, question, options, correctAnswer } = singleQuestion
-
+    const notify = () => toast(correctAnswer);
 
     return (
         <div className='single-quiz'>
@@ -17,7 +18,7 @@ const Question = ({ singleQuestion }) => {
                     options.map(option => <Option option={option}></Option>)
                 }
             </div>
-            <button className='font-eye' onClick={() => alert(`${correctAnswer}`)}><FontAwesomeIcon icon={faEye}></FontAwesomeIcon></button>
+            <button className='font-eye' onClick={() => notify(id)}><FontAwesomeIcon icon={faEye}></FontAwesomeIcon></button><ToastContainer />
 
         </div>
     );
