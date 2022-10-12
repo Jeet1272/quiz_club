@@ -15,7 +15,11 @@ const Question = ({ singleQuestion }) => {
             <h2>Q: {question.slice(3, -4)}</h2>
             <div>
                 {
-                    options.map(option => <Option option={option}></Option>)
+                    options.map(option => <Option
+                        option={option}
+                        singleQuestion={singleQuestion}
+                    ></Option>)
+
                 }
             </div>
             <button className='font-eye' onClick={() => notify(id)}><FontAwesomeIcon icon={faEye}></FontAwesomeIcon></button><ToastContainer />
