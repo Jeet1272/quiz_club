@@ -11,7 +11,7 @@ const Question = ({ singleQuestion }) => {
 
     return (
         <div className='single-quiz'>
-            <h2>Q:{question}</h2>
+            <h2>Q: {question.slice(3, -4)}</h2>
             <div>
                 {
                     options.map(option => <Option option={option}></Option>)
